@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>New Employees</h1>
+      <form action="" id="form-container">
+        <div class="form">
+          <div class="part">
+            <label for="name">Enter Name</label>
+            <input type="text" id="name" />
+          </div>
+
+          <div class="part">
+            <label for="profession">Enter Profession</label>
+            <input type="text" id="profession" />
+          </div>
+
+          <div class="part">
+            <label for="age">Enter Age</label>
+            <input type="number" id="age" />
+          </div>
+        </div>
+        <div class="btn" id="btn"><button>Add User</button></div>
+      </form>
+
+      <div class="addedEmployee">
+        <h1>Added Employees</h1>
+
+        <p>You have <span>0</span> Employees.</p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
