@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     employees.push(employee);
-    showMessage("Success : Employee Added!", "success");
+    showMessage("Success: Employee Added!", "success");
 
     nameInput.value = "";
     professionInput.value = "";
@@ -61,10 +61,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const newEmployeeContainer = document.createElement("div");
     newEmployeeContainer.className = "employee-list";
-    employees.forEach((employee) => {
+    employees.forEach((employee, index) => {
       const employeeDiv = document.createElement("div");
       employeeDiv.className = "employee";
-      employeeDiv.textContent = `Name: ${employee.name}, Profession: ${employee.profession}, Age: ${employee.age}`;
+      employeeDiv.textContent = `${index + 1}. Name: ${
+        employee.name
+      }, Profession: ${employee.profession}, Age: ${employee.age}`;
+
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
       deleteButton.style.cssText = `padding: 10px; margin-left: 10px; background-color: white; color: black; border: none; border-radius: 10px; cursor: pointer;`;
