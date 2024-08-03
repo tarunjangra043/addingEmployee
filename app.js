@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
       employeeDiv.textContent = `${index + 1}. Name: ${
         employee.name
       }, Profession: ${employee.profession}, Age: ${employee.age}`;
+      employeeDiv.style.cssText = `margin-top: 5px`;
 
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
